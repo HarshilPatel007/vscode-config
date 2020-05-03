@@ -30,5 +30,6 @@
     
     "workbench.editor.highlightModifiedTabs": true,
     "terminal.integrated.shell.linux": "/bin/zsh",
+    "files.insertFinalNewline": true
     
 }
