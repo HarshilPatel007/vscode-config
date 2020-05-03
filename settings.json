@@ -2,7 +2,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.autoComplete.extraPaths": [
-    
+        "~/.local/lib/python3.8/site-packages/django/"
     ],
     "python.diagnostics.sourceMapsEnabled": true,
     "python.linting.pylintArgs": [
