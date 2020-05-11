@@ -31,8 +31,22 @@
     "workbench.editor.highlightModifiedTabs": true,
     "terminal.integrated.shell.linux": "/bin/zsh",
     "files.insertFinalNewline": true,
+    "editor.renderControlCharacters": true,
     "html.format.enable": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-    
+    "editor.formatOnSave": true,
+
+
+    "css.remoteStyleSheets": [
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    ],
+    "path-autocomplete.extensionOnImport": true,
+    "css.fileExtensions": [
+        "css",
+        "scss",
+        "less",
+        "vue",
+        "html"
+    ]
 }
+
