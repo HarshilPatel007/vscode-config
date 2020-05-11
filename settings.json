@@ -30,6 +30,9 @@
     
     "workbench.editor.highlightModifiedTabs": true,
     "terminal.integrated.shell.linux": "/bin/zsh",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "html.format.enable": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
     
 }
