@@ -15,3 +15,11 @@ my personal configuration of VSCode
 **Note : Enable JavaScript Language Support**
 1) **ESLint** by publisher:"Dirk Baeumer"
 2) **TSLint by** publisher:"Microsoft"
+
+### For HTML/CSS
+1) **Auto Complete Tag** by publisher:"Jun Han"
+2) **HTML CSS Support** by publisher:"ecmel"
+
+### For CSS/JavaScript Frameworks
+1) **Vetur** by publisher:"Pine Wu" for **VueJS Framework**
+2) **Tailwind CSS IntelliSense** by publisher:"Brad Cornes" for **Tailwind CSS Framework**
