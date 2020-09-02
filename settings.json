@@ -1,16 +1,28 @@
 {
+    // Python settings.
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.autoComplete.extraPaths": [
-        "~/.local/lib/python3.8/site-packages/django/"
-    ],
     "python.diagnostics.sourceMapsEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=C0111", // missing docstring
         "--load-plugins=pylint_django"
     ], // need to install pylint and pylint-django in system. eg. pip install pylint pylint-django
+    "python.autoComplete.extraPaths": [
+        "~/.local/lib/python3.8/site-packages/django/"
+    ],
+    "python.autoComplete.addBrackets": true,
+    // end of Python settings.
+    
+    // Pyright extention settings.
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    // end of Pyright extention settings.
 
-
+    // Core editor settings.
     "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace", // need to install 'JetBrains Mono' fonts in system.
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
@@ -26,17 +38,11 @@
     "editor.suggest.shareSuggestSelections": true,
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "on", // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
-    
-    
     "workbench.editor.highlightModifiedTabs": true,
-    "terminal.integrated.shell.linux": "/bin/zsh",
     "files.insertFinalNewline": true,
     "editor.renderControlCharacters": true,
     "html.format.enable": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-
-
     "css.remoteStyleSheets": [
         "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     ],
@@ -47,6 +53,14 @@
         "less",
         "vue",
         "html"
-    ]
-}
+    ],
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Dracula",
+    // end of Core editor settings.
 
+    // Golang settings.
+    "go.formatTool": "goimports"
+    // end of Golang settings.
+}
