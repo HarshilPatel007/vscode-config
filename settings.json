@@ -1,86 +1,97 @@
 {
-    //Python related settings
-    "python.languageServer": "Pylance",
-    "python.globalModuleInstallation": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.diagnostics.sourceMapsEnabled": true,
-    "python.autoComplete.extraPaths": [
-        // "/home/user/.local/lib/python3.9/site-packages/",
-        // "/usr/lib/python3.9/"
-    ],
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.autoSearchPaths": true,
-    "python.analysis.useLibraryCodeForTypes": true,
-    "[python]": {
-        "editor.wordBasedSuggestions": false
-    },
-    "python.defaultInterpreterPath": "python",
-    "python.pythonPath": "/usr/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintPath": "/usr/bin/pylint",
-    "python.linting.pylintArgs": [
-            "--disable=C0111", // missing docstring
-            "--load-plugins=pylint_django"
-    ], // need to install pylint and pylint-django in system. eg. pip install pylint pylint-django
-    //Editor related settings
-    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace", // need to install 'JetBrains Mono' fonts in system.
-    "editor.fontSize": 15,
-    "editor.fontLigatures": true,
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.definitionLinkOpensInPeek": true,
-    "editor.formatOnPaste": true,
-    "editor.hover.delay": 50,
-    "editor.mouseWheelZoom": true,
-    "editor.quickSuggestions": true,
-    "editor.smoothScrolling": true,
-    "editor.tabCompletion": "on", // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
-    "editor.renderControlCharacters": true,
-    "editor.formatOnSave": true,
-    "editor.links": true,
-    "editor.suggest.preview": true,
-    "editor.suggestSelection": "first",
-    "editor.suggest.showStatusBar": true,
-    "editor.suggest.localityBonus": true,
-    "editor.suggest.insertMode": "replace",
-    "editor.suggest.shareSuggestSelections": true,
-    "editor.suggest.showDeprecated": false,
-    "editor.suggest.showIcons": true,
-    "html.format.enable": false,
-    //File related settings
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500,
-    "files.insertFinalNewline": true,
-    "files.defaultLanguage": "${activeEditorLanguage}",
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.vscode": true
-    },
-    "files.associations": {
-        "**/*.html":"html",
-        "**/templates/*.html": "django-html",
-        "**/templates/**/*.html": "django-html",
-        "**/templates/**/*": "django-txt",
-        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
-    },
-    //Workbench related settings
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.editor.enablePreview": false,
-    "terminal.external.linuxExec": "mate-terminal",
-    //Git related settings
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    // "go.toolsManagement.autoUpdate": true,
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    },
-
+  //Python related settings
+  "python.languageServer": "Pylance",
+  "python.globalModuleInstallation": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.diagnostics.sourceMapsEnabled": true,
+  "python.autoComplete.extraPaths": [
+    // "/home/user/.local/lib/python3.9/site-packages/",
+    // "/usr/lib/python3.9/"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "[python]": {
+    "editor.wordBasedSuggestions": false
+  },
+  "python.defaultInterpreterPath": "python",
+  "python.pythonPath": "/usr/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintPath": "/usr/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--disable=C0111", // missing docstring
+    "--load-plugins=pylint_django"
+  ], // need to install pylint and pylint-django in system. eg. pip install pylint pylint-django
+  "python.formatting.autopep8Path": "/usr/bin/autopep8",
+  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.formatting.provider": "black",
+  //Editor related settings
+  "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace", // need to install 'JetBrains Mono' fonts in system.
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.formatOnPaste": true,
+  "editor.hover.delay": 50,
+  "editor.mouseWheelZoom": true,
+  "editor.quickSuggestions": true,
+  "editor.smoothScrolling": true,
+  "editor.tabCompletion": "on", // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.renderControlCharacters": true,
+  "editor.formatOnSave": true,
+  "editor.links": true,
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "first",
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showDeprecated": false,
+  "editor.suggest.showIcons": true,
+  "html.format.enable": false,
+  //File related settings
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "files.insertFinalNewline": true,
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.vscode": true
+  },
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/*.html": "django-html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  //Workbench related settings
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.enablePreview": false,
+  "terminal.external.linuxExec": "mate-terminal",
+  //Git related settings
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "go.toolsManagement.autoUpdate": true,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "python.analysis.extraPaths": [],
+  "pythonTaskProvider.runDjangoToDiscoverOptions": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
