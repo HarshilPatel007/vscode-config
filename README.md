@@ -28,7 +28,7 @@ my personal configuration of VSCode
 2) **TSLint** by "Microsoft"
 3) **npm Intellisense** by "Christian Kohler"
 
-### For CSS/JavaScript Frameworks
+### CSS/JavaScript Frameworks
 1) ***VueJS Framework***
     - **Vetur** by "Pine Wu"
 2) ***ReacJS***
@@ -37,4 +37,8 @@ my personal configuration of VSCode
     - **exports autocomplete** by "capaj"
     - **React Redux Helper** by "Mayank Vamaj"
 3) ***Tailwind CSS Framework***
-    - **Tailwind CSS IntelliSense** by "Tailwind Labs" 
+    - **Tailwind CSS IntelliSense** by "Tailwind Labs"
+
+### Git
+1) **Git lence** by "GitKraken"
+2) **Git Graph** by "mhutchie"
