@@ -1,5 +1,5 @@
 {
-  //Python related settings
+  // python related settings
   "python.languageServer": "Pylance",
   "python.globalModuleInstallation": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
@@ -13,11 +13,13 @@
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoSearchPaths": true,
   "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.extraPaths": [],
+  "python.analysis.indexing": true,
   "[python]": {
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "ms-python.python"
   },
   "python.defaultInterpreterPath": "python",
-  "python.pythonPath": "/usr/bin/python",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.linting.lintOnSave": true,
@@ -29,13 +31,15 @@
   "python.formatting.autopep8Path": "/usr/bin/autopep8",
   "python.formatting.blackPath": "~/.local/bin/black",
   "python.formatting.provider": "black",
-  //Editor related settings
+
+  // editor related settings
   "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace", // need to install 'JetBrains Mono' fonts in system.
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.definitionLinkOpensInPeek": true,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.hover.delay": 50,
   "editor.mouseWheelZoom": true,
@@ -43,7 +47,6 @@
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on", // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
   "editor.renderControlCharacters": true,
-  "editor.formatOnSave": true,
   "editor.links": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
@@ -53,11 +56,16 @@
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showDeprecated": false,
   "editor.suggest.showIcons": true,
-  "html.format.enable": false,
-  //File related settings
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.foldingMaximumRegions": 65000,
+
+  // file related settings
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "${activeEditorLanguage}",
   "files.exclude": {
     "**/__pycache__": true,
@@ -70,28 +78,53 @@
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
-  //Workbench related settings
+
+  // workbench related settings
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
   "terminal.external.linuxExec": "mate-terminal",
-  //Git related settings
+
+  // git related settings
   "git.autofetch": true,
   "git.enableSmartCommit": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+
+  // json related settings
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "go.toolsManagement.autoUpdate": true,
-  "emmet.includeLanguages": {
-    "django-html": "html"
-  },
-  "python.analysis.extraPaths": [],
-  "pythonTaskProvider.runDjangoToDiscoverOptions": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
+  "json.maxItemsComputed": 500000,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "thunder-client.codeSnippetLanguage": "python-requests",
+
+  // emmet settings
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "javascript": "javascriptreact"
+  },
+
+  // html related settings
+  "html.format.enable": false,
+  "html.autoClosingTags": true,
+
+  // javascript / typescript related settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "javascript.format.semicolons": "remove",
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true
 }
